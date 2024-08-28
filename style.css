@@ -1,25 +1,192 @@
+/* General body styling */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
 }
+
+/* Header styling */
 header {
     background-color: #333;
     color: #fff;
-    padding: 10px 0;
+    padding: 5px 0;
     text-align: center;
 }
-section {
-    margin: 20px;
-}
-footer {
-    text-align: center;
-    padding: 10px 0;
+
+/* Navigation bar styling */
+.navbar {
+    display: flex;
+    justify-content: center;
     background-color: #333;
-    color: #fff;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    padding: 10px 0;
+}
+
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    transition: background-color 0.3s ease-in-out;
+    margin: 0 10px;
+}
+
+.navbar a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+.navbar a.active {
+    background-color: #04AA6D;
+    border-radius: 4px;
+}
+
+/* Responsive navigation */
+@media screen and (max-width: 600px) {
+    .navbar a {
+        display: block;
+        text-align: left;
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* Intro section styling */
+.intro {
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image {
+    flex-shrink: 0; /* Prevent the image from shrinking */
+    width: 35%; /* Cover close to half the page */
+    
+}
+
+.profile-image img {
+    width: 100%; /* Ensure the image uses the full width of its container */
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    display: block; /* Remove any additional inline spacing */
+}
+
+.intro-text {
+    flex-grow: 1; /* Allow the text to take up the remaining space */
+    margin-left: 0; /* Ensure there is no margin */
+    padding-left: 30px; /* Add minimal padding to prevent text sticking */
+}
+
+.intro-text h1 {
+    margin: 0;
+    font-size: 32px;
+    color: #333;
+}
+
+.intro-text p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+
+/* Projects section styling */
+.projects {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.projects h1 {
+    text-align: center;
+    color: #333;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.project {
+    margin-bottom: 30px;
+}
+
+.project h2 {
+    font-size: 24px;
+    color: #04AA6D;
+    margin-bottom: 10px;
+}
+
+.project h2 a {
+    text-decoration: none;
+    color: #04AA6D;
+    transition: color 0.3s ease;
+}
+
+.project h2 a:hover {
+    color: #333;
+}
+
+.project p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+
+/* Resume section styling */
+.resume {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.resume h1, .resume h2 {
+    color: #333;
+    text-align: center;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.experience, .skills, .awards, .education {
+    margin-bottom: 20px;
+}
+
+.experience h3 {
+    font-size: 20px;
+    color: #04AA6D;
+    margin-bottom: 5px;
+}
+
+.experience p {
+    font-size: 16px;
+    color: #333;
+}
+
+.experience ul, .skills ul, .awards ul, .education ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.experience ul li, .skills ul li, .awards ul li, .education ul li {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 10px;
 }
