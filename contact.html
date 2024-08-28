@@ -8,33 +8,78 @@
   </head>
   <body>
     <header>
-      <h1>Contact</h1>
+      <nav>
+        <div class="navbar">
+          <a href="index.html">Home</a>
+          <a href="resume.html">Resume</a>
+          <a href="blog.html">Blog</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html" class="active">Contact</a>
+        </div>
+      </nav>
     </header>
-    <nav>
-      <div class="navbar">
-        <a href="index.html">Home</a>
-        <a href="resume.html">Resume</a>
-        <a href="blog.html">Blog</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
+
+    <section class="contact">
+      <h1>Contact Me</h1>
+      <p>
+        I'd love to hear from you! Feel free to reach out through any of the
+        platforms below or send me a direct message using the form.
+      </p>
+
+      <div class="contact-info">
+        <p>
+          <strong>Email:</strong>
+          <a href="mailto:raghav.agarwal@gwmail.gwu.edu"
+            >raghav.agarwal@gwmail.gwu.edu</a
+          >
+        </p>
+        <p>
+          <strong>LinkedIn:</strong>
+          <a
+            href="https://www.linkedin.com/in/raghav-agarwal-127539170"
+            target="_blank"
+            >linkedin.com/in/raghav-agarwal</a
+          >
+        </p>
+        <p>
+          <strong>Blog Profile:</strong>
+          <a href="https://medium.com/@raghav1999agg" target="_blank"
+            >medium.com/@raghav1999agg</a
+          >
+        </p>
+        <p>
+          <strong>Google Scholar:</strong>
+          <a
+            href="https://scholar.google.com/citations?user=RJsbe-0AAAAJ&hl=en"
+            target="_blank"
+            >scholar.google.com/Raghav-Agarwal</a
+          >
+        </p>
       </div>
-    </nav>
-    <section>
-      <h2>Get in Touch</h2>
+
+      <h2>FORM</h2>
       <form
-        action="mailto:raghav@example.com"
+        action="mailto:raghav.agarwal@gwmail.gwu.edu"
         method="post"
         enctype="text/plain"
+        class="contact-form"
       >
-        <label for="name">Name:</label><br />
-        <input type="text" id="name" name="name" /><br />
-        <label for="email">Email:</label><br />
-        <input type="text" id="email" name="email" /><br />
-        <label for="message">Message:</label><br />
-        <textarea id="message" name="message"></textarea><br /><br />
-        <input type="submit" value="Send" />
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit">Send Message</button>
       </form>
     </section>
+
     <footer>
       <p>&copy; 2024 Raghav Agarwal</p>
     </footer>

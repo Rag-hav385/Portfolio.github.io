@@ -3,33 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Blogs</title>
+    <title>Blog - Raghav Agarwal</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <h1>My blogs</h1>
+      <nav>
+        <div class="navbar">
+          <a href="index.html">Home</a>
+          <a href="resume.html">Resume</a>
+          <a href="blog.html" class="active">Blog</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
     </header>
-    <nav>
-      <div class="navbar">
-        <a href="index.html">Home</a>
-        <a href="resume.html">Resume</a>
-        <a href="blog.html">Blog</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
-      </div>
-    </nav>
 
-    <section>
-      <h2>Latest Posts</h2>
-      <ul>
-        <li><a href="#">Blog Post 1</a></li>
-        <li><a href="#">Blog Post 2</a></li>
-        <li><a href="#">Blog Post 3</a></li>
-      </ul>
+    <section class="blogs">
+      <h1>My Blog</h1>
+
+      <div class="blog-post">
+        <h2>
+          <a href="blog1.html"
+            >Blog Post 1: Understanding Causal Inference in Data Science</a
+          >
+        </h2>
+        <p>
+          In this blog post, I delve into the concept of causal inference,
+          exploring how it is used in data science to determine cause-and-effect
+          relationships. This includes an overview of methodologies like
+          CausalML and real-world applications in industries such as gaming.
+        </p>
+      </div>
+
+      <div class="blog-post">
+        <h2>
+          <a href="blog2.html"
+            >Blog Post 2: A Guide to Deep Learning Techniques</a
+          >
+        </h2>
+        <p>
+          This guide provides an introduction to deep learning, covering
+          essential techniques and models that every data scientist should know.
+          I discuss the evolution of deep learning, its key components, and
+          practical tips for implementation.
+        </p>
+      </div>
+
+      <div class="blog-post">
+        <h2>
+          <a href="blog3.html">Blog Post 3: Predictive Modeling with Python</a>
+        </h2>
+        <p>
+          Learn how to create effective predictive models using Python. This
+          blog post walks you through the process, from data preparation to
+          model evaluation, highlighting the best practices and common pitfalls.
+        </p>
+      </div>
+
+      <!-- Add more blog posts as needed -->
     </section>
+
     <footer>
-      <p>&copy; 2024 Raghav Agarwal</p>
+      <p>Contact: <a href="mailto:raghav@example.com">raghav@example.com</a></p>
     </footer>
   </body>
 </html>
